@@ -2,6 +2,32 @@
 
 - [Remix Docs](https://remix.run/docs)
 
+## Requirement
+
+First, Install dependencies
+
+```sh
+npm install
+```
+
+Second, Create database from schema
+
+```sh
+npx prisma db push
+```
+
+Third, Seed database contains user and jokes
+
+```sh
+node --require esbuild-register prisma/seed.ts
+```
+
+Last, you can login as
+```
+username: timo
+password: password
+```
+
 ## Development
 
 From your terminal:
